@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bomb
+* source:	https://sketchfab.com/3d-models/bomb-8a3d4b05df3f4fda9aa446a39bf984f1
+* author:	R.Linden (https://sketchfab.com/RickvanderLinden)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bomb" (https://sketchfab.com/3d-models/bomb-8a3d4b05df3f4fda9aa446a39bf984f1) by R.Linden (https://sketchfab.com/RickvanderLinden) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

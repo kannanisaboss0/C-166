@@ -1,0 +1,47 @@
+<!----------------------------------------------------------------Dodge the rocket---------------------------------------------------------------->
+
+<!--Defining the document-->
+<!DOCTYPE html>
+
+<!--Defining the html tag to determine the interpretation language-->
+<html lang="en" dir="ltr"></html>
+
+<!--Head tag-->
+<head>
+
+    <!--Setting the meta tag-->
+    <meta charset="utf-8" />
+
+    <!--Setting the script tags containing external links (aframe,aframe-min,ar-gesture-handler,aframe-physics)-->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://raw.githack.com/whitehatjr/ar-gesture-handler/main/index.js"></script>
+    <script src=https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!--Setting the script tags cotnaining local files-->
+    <script src="bomb_drop.js"></script>
+  
+</head>
+
+<!--Body tag-->
+<body>
+
+   <!--Setting the scene tag with the required ar and physics tags--> 
+   <a-scene physics="gravity:-9.8" embedded arjs="sourceType:webcam;trackingMethod:best;debugUIEnabled:false" vr-mode-ui="enabled:false">
+
+    <!--Adding the assets tags-->
+    <a-assets>
+       <a-asset-item id="Bomb" src="./bomb/scene.gltf"></a-asset-item>
+       <a-asset-item id="Bazooka" src="./bazooka/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <!--Adding the marker tags to -->
+    <a-marker>
+        <a-entity position="-10 0 0" bomb-dropper rotation="0 0 -90" animation="property:position;to:8 0 0;loop:true;easing:linear;dur:2000" id="main_obj" gltf-model="#Bomb"></a-entity>
+        <a-entity scale="0.5 0.5 0.5" position="-5 0 0"  id="gun" gltf-model="#Bazooka"></a-entity>
+    </a-marker>
+   </a-scene> 
+</body>
+
+<!----------------------------------------------------------------Dodge the rocket---------------------------------------------------------------->
